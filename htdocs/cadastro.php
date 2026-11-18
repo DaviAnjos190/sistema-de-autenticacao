@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     try {
         $stmt->execute();
-        header('Location: index.php'); // Redireciona para a página inicial após o cadastro
+        header('Location: index.php'); // Redireciona para página inicial após o cadastro
     } catch (PDOException $e) {
         echo "<div class='alert alert-danger'>Erro: " . $e->getMessage() . "</div>";
     }
